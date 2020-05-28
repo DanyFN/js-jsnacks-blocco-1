@@ -1,0 +1,20 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: rgb(35, 66, 148);
+  color: white;
+}
+h1{
+  text-align: center;
+  font-style: italic;
+
+}
+#ordineParole{
+  padding-top: 40px;
+  font-size: 30px;
+  text-align: center;
+}

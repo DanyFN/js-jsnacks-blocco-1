@@ -22,7 +22,6 @@ while (i < invitati.length) {
   if (invitati[i] == utente) {
     trovato = true;
   }
-
   i++;
 }
 

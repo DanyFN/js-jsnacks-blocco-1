@@ -1,14 +1,14 @@
 // Chiedi un numero di 4 cifre all’utente e calcola la somma di tutte le cifre che compongono il numero.
-
 var numero = prompt("inserisci un numero di 4 cifre");
 console.log(typeof numero);
 
-while (isNaN(numero)) {
-  numero = prompt("ERRORE! NON HAI INSERITO UN NUMERO");
-}
 
-while ( !(numero >= 1000 && numero <= 9999) ) {
-  numero = prompt("ERRORE!! Inserisci un numero di 4 cifre");
+while ( !(numero >= 1000 && numero <= 9999) || isNaN(numero) ) {
+  if (isNaN(numero)) {
+    numero = prompt("ERRORE! hai inserito dei caratteri")
+  }else if ( !(numero >= 1000 && numero <= 9999) ) {
+    numero = prompt("ERRORE! inserisci un numero di 4 cifre")
+  }
 };
 
 var numeroSplit = numero.split("");

@@ -12,6 +12,7 @@ while ( !(numero >= 1000 && numero <= 9999) || isNaN(numero) ) {
 };
 
 var numeroSplit = numero.split("");
+//oppure ciclare sulla stringa con il .length
 console.log(numeroSplit);
 
 
@@ -19,6 +20,7 @@ var somma = 0;
 
 for (var i = 0; i < numeroSplit.length; i++) {
   somma = somma + parseInt(numeroSplit[i]);
+  // somma += parseInt(numeroSplit[i]);
 }
 
 var numeriSomma = document.getElementById("listaP");

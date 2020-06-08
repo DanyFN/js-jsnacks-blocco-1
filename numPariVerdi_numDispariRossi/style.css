@@ -1,0 +1,14 @@
+
+#red, #green {
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#red {
+    color: red;
+}
+
+#green {
+    color: green;
+}
